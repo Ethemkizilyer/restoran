@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import SearchScreen from './screens/SearchScreen';
+import ResultShowScreen from './screens/ResultShowScreen';
 
 const Stack= createNativeStackNavigator()
 
@@ -11,6 +12,7 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerTitle:"Restoran Uygulaması"}}>
         <Stack.Screen name="Search" component={SearchScreen}/>
+        <Stack.Screen name="ResultsShow" component={ResultShowScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
